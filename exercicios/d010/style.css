@@ -1,0 +1,121 @@
+#cabecalho{
+    background-image: linear-gradient(to bottom, #429ec2, #10222a);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.436);
+}
+
+header > h1{
+    font-weight: bold;
+    text-align: center;
+}
+
+header > p {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 390px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+nav > a{
+   color: white;
+   text-decoration: none;
+   margin-right: 15px;
+   font-weight: bold;
+}
+
+body{
+    background-color: #76a1b1b5;
+}
+
+section{
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    /* height: 700px; */
+    border-radius: 5px;
+    padding: 3px 3px 3px 15px;
+}
+
+h2{
+    font-family: 'android';
+    color: #204454;
+}
+
+h3{
+    font-family: 'android';
+    background-image: linear-gradient(to left, white, #dbe0e2, #56a2c5);
+    color: #204454;
+}
+
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf);
+}
+
+.paragrafos{
+    text-align: justify;
+    text-indent: 25px;
+    padding: 5px;
+}
+
+#imgbugdroid{
+    text-align: center;
+}
+
+#divfinal{
+    height: 430px;
+    background-color: #c3e7f8;
+    padding: 1px;
+    border-radius: 10px 10px 10px 10px;
+    width: 790px;
+    margin-bottom: 30px;
+}
+
+#aprendermais{
+    background-color: #429ec2;
+    color: white;
+    font-weight: bold;
+    padding: 10px; 
+    border-radius: 10px 10px 0px 0px;
+    width: 790;
+}
+
+#video{
+    margin-bottom: 10px;
+}
+
+#listas > ul{
+    display: inline-block;
+    margin-right: 200px;
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #10222a;
+    color: white;
+    text-align: center;
+}
+
+.linksativos{
+    color: #346c83;
+    font-weight: bold;
+}
+
+.linksativos::after{
+    content: "\01F4CE";
+}
+
+.negrito{
+    color: #346c83;
+    font-weight: bold;
+}
+
+nav > a:hover{
+    background-color: #5094b1;
+    padding: 2px;
+    border-radius: 2px;
+}
