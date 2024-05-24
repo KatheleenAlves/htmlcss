@@ -44,3 +44,27 @@ iframe#tela{
     width: 269px;
     height: 471px;
 }
+
+section#redesSociais{
+    text-align: right;
+}
+
+section#redesSociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+    /*para não modificar a altura quando passamos o mouse e a borda aumentar*/
+    box-sizing: border-box;
+}
+
+/*Criando efeito de movimento ao passar o mouse pelo botão*/
+section#redesSociais img:hover{
+   border: 2px solid rgba(255, 255, 255, 0.612);
+   /*10 px para esquerda e 10px para cima*/
+   transform: translate(-3px, -3px);
+   box-shadow: 5px 5px 501px rgba(0, 0, 0, 0.521);
+   /*Transition para que as tranformações ocorram de forma mais natural, ja a borda levará 0.5 segundos*/
+   transition: transform 0.25s, border 0.5s;
+
+}
