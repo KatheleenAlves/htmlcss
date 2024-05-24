@@ -15,12 +15,10 @@ html, body{
 
 body{
     background-image: url(../pacote-d013/imagens/fundo-madeira.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    /*cobre a pagina*/
-    background-size: cover;
-    /*para nao rolar a page*/
-    background-attachment: fixed;
+    background-repeat: no-repeat;    /*nao repete a imagem*/
+    background-position: top center;    
+    background-size: cover; /*cobre a pagina*/
+    background-attachment: fixed; /*para nao rolar a page*/
 }
 
 main{
@@ -37,4 +35,12 @@ section#telefone{
     width: 311px;
     background-image: url('../pacote-d013/imagens/frame-iphone.png');
     background-repeat: no-repeat;
+}
+
+iframe#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
 }
