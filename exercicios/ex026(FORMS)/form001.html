@@ -11,10 +11,19 @@
     </style>
 </head>
 <body>
+    <!--Métodos de envio de formulário
+    GET: Padrão, dados na URL: sem dados sensíveis(ex: pesquisa no google), até 3milbytes(3 mil letras), fotos e arquivos não são permitidos
+    POST: Não manda dados pela URL: dados sensíveis, envio de arquivos-->
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="txtNome" id="txtNome"></p>
-        <p>Sobrenome: <input type="text" name="txtSobrenome" id="txtSobrenome"></p>
+    <!--Desligar sugestões de preenchimento nos campos: autocomplete="off"-->
+    <form form="POST" action="cadastro.php" autocomplete="off">
+        <p>
+            <label for="txtNome">Nome:</label> 
+            <input type="text" name="txtNome" id="txtNome"></p>
+
+        <p>
+            <label for="txtSobrenome">Sobrenome: </label>
+            <input type="text" name="txtSobrenome" id="txtSobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
