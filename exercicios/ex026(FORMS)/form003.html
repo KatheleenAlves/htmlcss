@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body onload="carregar()">
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="txtNome">Nome: </label>
+            <input type="text" name="nome" id="txtNome" required maxlength="30" placeholder="Nome completo" autocomplete="name" required>
+        </p>
+        <p>
+            <label for="alunoMedia">Média: </label>
+            <input type="number" name="media" id="alunoMedia" min="0" max="10" placeholder="0 a 10" step="0.1" required> <!--step: então a nota mudará de 0.5 a 0.5-->
+        </p>
+        <p>
+            <label for="txtMes">Período letivo: </label>
+            <input type="month" name="mes" id="txtMes"> <!--value: valor que você que já apareça no input-->
+        </p>
+        <p>
+            <label for="diaProva">Dia da prova: </label>
+            <input type="date" name="" id="diaProva" >
+        </p>
+        <p>
+            <label for="horaProva">Hora da prova:</label>
+            <input type="time" name="horaProva" id="horaProva">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script src="pegarhoras.js"></script>
+</body>
+</html>
