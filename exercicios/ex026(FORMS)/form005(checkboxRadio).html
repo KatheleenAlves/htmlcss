@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <!--Para permitir apenas uma escolha no radio, é so usar o "name" igual-->
+            <!--Checked: para já deixar selecionado -->
+            <!--value: para receber o valor e depois mexer com esse dado-->
+            <input type="radio" name="sx" id="rMax" value="M" checked><label for="rMax">Masculino</label>
+            <input type="radio" name="sx" id="rFem" value="F"><label for="rFem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="basquete" id="iBasquete" checked>            
+            <label for="iBasquete"> Basquete</label><br>
+
+            <input type="checkbox" name="futebol" id="iFutebol" checked> 
+            <label for="iFutebol"> Futebol</label><br>
+
+            <input type="checkbox" name="natacao" id="iNatacao"> <label for="iNatacao"> Natação</label><br>
+
+            <input type="checkbox" name="tenis" id="iTenis"> <label for="iTenis"> Tênis</label>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    
+</body>
+</html>

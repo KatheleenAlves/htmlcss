@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset> <!--field:set faz um agrupamento, tipo uma borda-->
+            <legend>Dados pessoais</legend> <!--legend: nomeia seu fieldset-->
+            <div>
+                <label for="txtNome">Nome</label>
+                <input type="text" name="nome" id="txtNome" minlength="5" maxlength="20" required>
+            </div>
+            <div>
+                <label for="txtEmail">E-mail</label>
+                <input type="email" name="email" id="txtEmail" autocomplete="email" required>
+            </div>
+            <div>
+                <label for="txtTelefone">Telefone</label>
+                <!--Estudar sobre RegEX ---Expressões regulares -->
+                <input type="tel" name="tel" id="txtTel" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+                <!--pattern são padrões, ela começa com "^" e termina com "$" de 0 a 9, com 4 digitos depois "-" e quatro digitos-->
+                <!--DDD:
+                    (\d{2}\)
+                -->
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+
+</html>
