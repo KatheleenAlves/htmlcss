@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iCor">Cor: </label>
             <!--Input para escolher cor-->
@@ -22,6 +22,7 @@
         </p>
         <p>
             <!--Input de foto-->
+            <!--Para fotos use sempre o methodo post e nãoo get-->
             <label for="iFoto">Foto do perfil </label>
             <input type="file" name="foto" id="iFoto">
         </p>
