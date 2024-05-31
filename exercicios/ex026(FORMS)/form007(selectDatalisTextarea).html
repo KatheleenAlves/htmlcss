@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{
+            /*Para o usuário não alterar o tamanho da textarea*/
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">  
+        <p>
+            <label for="iEstado">Estado</label>
+            <select name="estado" id="iEstado" required>     
+                <option value="" selected>--- Escolha ---</option> <!--option de escolher-->
+
+                <!--opgroup com label: permite você separar um grupo de opções de um select e colocar uma legenda-->
+                <!--selected: já deixa o option selecionado assim que carregar a página-->
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <!--Input com select-->
+            <label for="iProf">Profissão</label>
+            <input type="text" name="prof" id="iProf" list="lstProf" required>
+            <datalist id="lstProf">
+                <!--value: legenda-->
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <!--CAMPO DE MENSAGEM-->
+            <!--Sempre com método post, para ter o bytes sem limites-->
+            <label for="iMsg">Mensagens</label><br>
+            <textarea name="msg" id="iMsg" cols="30" rows="10" placeholder="Sua mensagem aqui" required></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
