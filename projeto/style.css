@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+:root{
+    --corDeFundo: rgba(128, 128, 128, 0.134);
+    --padrao: rgb(43, 25, 98);
+    --fonte: Arial, Helvetica, sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+main{
+    background-color: var(--corDeFundo);
+    margin: auto;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--fonte);
+    border-radius: 8px;
+    box-shadow: 2pt 2pt 2pt rgba(0, 0, 0, 0.142);
+}
+
+div#dfotoUsario{
+    padding-right: 40%;
+}
+
+img#imgUsario{
+    position: absolute;    
+    top: -130px;
+}
+
+
+div{
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+div#dPrincipal{
+    margin-top: 80px;
+}
+
+div#dSecundaria{
+    margin-bottom: 0px;
+}
+
+div.dInputs > label{
+    display: block;
+    color: var(--padrao);
+    font-weight: bolder;
+    font-size: 14pt;
+    text-align: left;
+    padding-left: 46px;
+}
+
+
+input.txt{
+    position: relative;
+    padding: 5px;
+    width: 350px;
+    height: 28px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.266);
+    font-family: var(--fonte);
+    font-size: 14px;
+    background-color: transparent;
+    padding-left: 40px;
+}
+
+i#iUsuario{
+    position: absolute;
+    display: block;
+    left: 68px;
+    top: 144px;
+    height: 18px;
+    color: var(--padrao);
+}
+
+i#iSenha{
+    position: absolute;
+    display: block;
+    left: 68px;
+    top: 250px;
+    height: 18px;
+    color: var(--padrao);
+}
+
+i#iFotoUser{
+    width: 100px;
+    height: 100px;
+}
+
+div#dCadeSenha{
+    margin-bottom: 20px;
+    
+}
+
+a.aCe{
+    text-decoration: none;
+    color: var(--padrao);
+    font-weight: bolder;
+}
+
+a#aCadastrar{
+    float: left;
+    padding-left: 40px;
+}
+
+a#aEsqueceuSenha{
+    float: right;
+    padding-right: 42px;
+}
+
+button.btn{
+    padding: 10px;
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 4px;
+    font-size: 12pt;
+    box-shadow: 3pt 3pt 3pt rgba(0, 0, 0, 0.255);
+    font-weight: bolder;
+    font-family: var(--fonte);
+    background-color: var(--padrao);
+    color: white;
+    border: none;
+}

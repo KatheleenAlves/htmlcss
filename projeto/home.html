@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div id="dfotoUsario">
+            <img src="usuarioFoto.png" alt="" id="imgUsario">
+        </div>
+        <section>           
+            <form>
+                <div class="dInputs" id="dPrincipal">
+                    <label for="txtUser">User</label>
+                    <input type="text" id="txtUser" class="txt">
+                    <i class="fa-solid fa-user" aria-hidden="true" id="iUsuario"></i> 
+                </div>
+                <div class="dInputs" id="dSecundaria">
+                    <label for="txtSenha">Senha</label> 
+                    <input type="password" id="txtSenha" class="txt">
+                    <i class="fa-solid fa-lock" id="iSenha"></i>                          
+                </div>
+                <div id="dCadeSenha">
+                    <a href="#"class="aCe" id="aCadastrar">Cadastrar</a>
+                    <a href="#"  class="aCe" id="aEsqueceuSenha">Esqueceu a senha?</a>
+                </div>
+                <div class="dInputs">
+                    <button id="btnCancelar" class="btn">Cancelar</button>
+                    <button id="btnEnviar" class="btn">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
