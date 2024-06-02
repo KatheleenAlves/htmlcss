@@ -1,22 +1,22 @@
 @charset "UTF-8";
 
-:root{
+:root {
     --corDeFundo: rgba(128, 128, 128, 0.134);
     --padrao: rgb(43, 25, 98);
     --fonte: Arial, Helvetica, sans-serif;
 }
 
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
 
 
-main{
+main {
     background-color: var(--corDeFundo);
     margin: auto;
-    width: 500px;
-    height: 400px;
+    width: 440px;
+    height: 420px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,44 +26,45 @@ main{
     box-shadow: 2pt 2pt 2pt rgba(0, 0, 0, 0.142);
 }
 
-div#dfotoUsario{
+div#dfotoUsario {
     padding-right: 40%;
 }
 
-img#imgUsario{
-    position: absolute;    
+img#imgUsario {
+    position: absolute;
     top: -130px;
 }
 
 
-div{
+div {
     padding: 10px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-div#dPrincipal{
+div#dPrincipal {
     margin-top: 80px;
 }
 
-div#dSecundaria{
+div#dSecundaria {
     margin-bottom: 0px;
 }
 
-div.dInputs > label{
+div.dInputs>label {
     display: block;
     color: var(--padrao);
     font-weight: bolder;
     font-size: 14pt;
     text-align: left;
-    padding-left: 46px;
+    padding-left: 38px;
+    padding-bottom: 6px;
 }
 
 
-input.txt{
+input.txt {
     position: relative;
     padding: 5px;
-    width: 350px;
+    width: 300px;
     height: 28px;
     border-radius: 6px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.266);
@@ -73,51 +74,51 @@ input.txt{
     padding-left: 40px;
 }
 
-i#iUsuario{
+i#iUsuario {
     position: absolute;
     display: block;
-    left: 68px;
-    top: 144px;
+    left: 62px;
+    top: 148px;
     height: 18px;
     color: var(--padrao);
 }
 
-i#iSenha{
+i#iSenha {
     position: absolute;
     display: block;
-    left: 68px;
-    top: 250px;
+    left: 62px;
+    top: 260px;
     height: 18px;
     color: var(--padrao);
 }
 
-i#iFotoUser{
+i#iFotoUser {
     width: 100px;
     height: 100px;
 }
 
-div#dCadeSenha{
-    margin-bottom: 20px;
-    
+div#dCadeSenha {
+    margin-bottom: 30px;
+
 }
 
-a.aCe{
+a.aCe {
     text-decoration: none;
     color: var(--padrao);
     font-weight: bolder;
 }
 
-a#aCadastrar{
+a#aCadastrar {
     float: left;
-    padding-left: 40px;
+    padding-left: 34px;
 }
 
-a#aEsqueceuSenha{
+a#aEsqueceuSenha {
     float: right;
-    padding-right: 42px;
+    padding-right: 34px;
 }
 
-button.btn{
+button.btn {
     padding: 10px;
     width: 100px;
     margin-right: 10px;
