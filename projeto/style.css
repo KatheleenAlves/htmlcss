@@ -35,6 +35,9 @@ img#imgUsario {
     top: -130px;
 }
 
+form{
+    flex-direction: column;
+}
 
 div {
     padding: 10px;
