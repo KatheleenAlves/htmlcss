@@ -4,4 +4,6 @@
 
 body{
     background-image: url(../imagens/cev-landscape.jpg);
+    /*fica grudado no lado direito e na parte de baixo*/
+    background-position: left bottom;
 }
