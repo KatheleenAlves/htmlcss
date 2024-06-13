@@ -1,3 +1,97 @@
 @charset "UTF-8";
 
 /* TODAS AS DEMAIS MÍDIAS */
+
+/* Typical Device Breakpoints
+pequena telas: até 600px;
+celulares: 600px até até 768px;
+tablet: 769px até 992px;
+desktop: 992px até 1200px
+grandes tela: acima de 1200px
+*/
+
+/* impressora */
+@media print{
+    /* Desnecessário background, pois não é impresso no papel */
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after{
+        content: "Essa impressão foi feita por Katheleen Alves";
+        text-decoration: overline;   /* linha em cima do texto */
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black
+    }
+
+    img#phone{ display: none;}
+    /*aparece o tablet*/
+    img#tablet{display: none}
+    img#print{display: block;}  
+    img#pc{display: none;}   
+    img#tv{display: none;}
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{ display: none;}
+    /*aparece o tablet*/
+    img#tablet{display: block}
+    img#print{display: none;}  
+    img#pc{display: none;}   
+    img#tv{display: none;}
+}
+
+/* desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{ display: none;}
+    img#tablet{display: none}
+    img#print{display: none;}
+    /*aparece o tablet*/  
+    img#pc{display: block;}   
+    img#tv{display: none;}
+}
+
+/* telas grandes */
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+    img#phone{ display: none;}
+    img#tablet{display: none}
+    img#print{display: none;}
+    /*aparece o tablet*/  
+    img#pc{display: none;}   
+    img#tv{display: block;}    
+}
+
+/* PEQUENAS TELAS: Não precisa pois você criou ja mobile first */
+/* @media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (min-width: 600px) and (max-width:768px){
+
+} */
