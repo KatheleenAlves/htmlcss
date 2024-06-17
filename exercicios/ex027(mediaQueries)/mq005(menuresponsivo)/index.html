@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media mediaQuery</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickmenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li ><a href="#">Home</a></li>
                 <li ><a href="#">Info</a></li>
@@ -34,5 +36,19 @@
             </p>
         </article>
     </main>
+    <script>
+        function clickmenu(){
+
+            //Se estiver sendo exibindo: block vc esconde caso encontrar
+            if( itens.style.display == "block"){
+                itens.style.display = "none"
+            }
+            //caso n esteja igual a block(escondido), eu mostro
+            else{
+                itens.style.display = "block"
+            }
+            // itens.style.display = "block" 
+        }
+    </script>
 </body>
 </html>

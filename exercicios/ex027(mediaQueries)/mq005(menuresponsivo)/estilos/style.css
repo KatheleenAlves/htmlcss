@@ -19,8 +19,21 @@
     text-align: center;
  }
 
+ i#burguer{
+   background-color: rgba(0, 128, 0, 0.279);
+   text-align: center;
+   padding: 10px;
+   display: block;
+ }
+
+ i#burguer:hover{
+   background-color: rgba(2, 87, 2, 0.855);
+   color: white;
+   cursor: pointer;
+ }
+
  menu{
-    display: block;
+    display: none;
  }
 
  menu ul{
