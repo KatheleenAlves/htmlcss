@@ -6,8 +6,10 @@
     <title>Media mediaQuery</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/mediaQuery.css">
 </head>
-<body>
+<!-- onresize: quanto o tamanho mudar ele vai chamar uma função -->
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clickmenu()">menu</i>
@@ -48,6 +50,14 @@
                 itens.style.display = "block"
             }
             // itens.style.display = "block" 
+        }
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = "block"
+            }else{
+                itens.style.display = "none"
+            }
         }
     </script>
 </body>
