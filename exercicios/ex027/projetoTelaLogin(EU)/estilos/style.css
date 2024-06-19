@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    width: 90vw;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+i{
+    background-color: blue;
+}
