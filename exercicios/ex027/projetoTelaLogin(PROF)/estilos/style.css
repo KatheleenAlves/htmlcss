@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* 
+    Paleta de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+
+:root{
+   --lilas: #5f2c82;
+   --verde:  #49a09d;
+}
+
+/* MOBILE FIRST */
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;    /* A borda conta como largura */
+}
+
+body, html{
+    background-color: var(--lilas);
+    height: 100vh; /*100% da tela*/
+    width: 100vw;
+    font-size: 0.9em;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden; /*Tudo que tiver fora da borda será excluído, pois a imagem tinha passado a borda*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.427);
+
+    /* Quando aumentar leva 1s */
+    transition: width .3s, height .3s;
+
+    transition-timing-function: ease; /*suaviza transição*/
+}
+
+section#login div#imagem{
+    display: block;
+    background: var(--lilas) url(../imagens/pexels-bruthethe-3035998\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    background-position: center bottom; /*Posiciona a imagem de acordo com o que você quiser*/
+}
+
+section#login div#formulario{
+    display: block;
+    padding: 10px;
+    text-align: justify;
+}
+
+div#formulario h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario p{
+    font-size: 0.8em;
+}
+

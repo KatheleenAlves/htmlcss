@@ -6,12 +6,55 @@
 }
 
 main{
-    width: 90vw;
-    height: 200px;
+    width: 60vw;
+    height: 300px;
     border: 2px solid black;
     border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+
+input{
+    width: 85%;
+    height: 25px;
+    margin: 10px;
+}
+
+.botoes{
+    margin-top: 10px;
+}
+
+button{
+    margin: 5px;
+    margin-right: 0px;
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(59, 139, 176);
+    color: white;
+    padding: 3px;
+    
 }
 
 i{
-    background-color: blue;
+    width: 10px;
 }
+
+
+.txt{
+    margin-top: 10px;
+}
+
+
