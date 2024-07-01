@@ -78,9 +78,10 @@ div#formulario p{
 form div.campo{
     background-color: var(--lilas);
     width: 100%;
+    border: 2px solid var(--lilas);
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px; /*De cima e em baixo: 5px o resto é 0px*/
 }
 
@@ -88,7 +89,29 @@ form label{
     display: none;
 }
 
-input
+div.campo i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo input{
+    background-color: #61d5d1;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    transform: translateY(-19%);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+/* QUANDO CLICAR A CAIXA FICARÁ BRANCA */
+div.campo input:focus-within{
+    background-color: white;
+    border: none;
+}
 
 form input[type=submit]{
     display: block;
@@ -128,4 +151,6 @@ form a.botao i{
 form a.botao:hover{
     background-color: #39c6c1;
 }
+
+
 
