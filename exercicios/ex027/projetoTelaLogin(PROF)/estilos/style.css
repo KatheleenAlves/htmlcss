@@ -37,7 +37,6 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 515px;
@@ -49,6 +48,8 @@ section#login{
     transition: width .3s, height .3s;
 
     transition-timing-function: ease; /*suaviza transição*/
+
+    transform: translate(-50%, -50%);
 }
 
 section#login div#imagem{
@@ -100,11 +101,12 @@ div.campo input{
     background-color: #61d5d1;
     font-size: 1em;
     width: calc(100% - 44px);
-    transform: translateY(-19%);
     height: 100%;
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+    
+    transform: translateY(-19%);
 }
 
 /* QUANDO CLICAR A CAIXA FICARÁ BRANCA */
